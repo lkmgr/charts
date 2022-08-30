@@ -1,0 +1,12 @@
+---
+apiVersion: v2
+description: A common powered chart template. This can be useful for small projects that don't have their own chart.
+name: app-template-extra
+version: 0.1.0
+maintainers:
+  - name: lkmgr
+    email: lkmgr@users.noreply.github.com
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    version: 0.1.0
