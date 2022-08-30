@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 description: A common powered chart template. This can be useful for small projects that don't have their own chart.
-name: app-template-extra
+name: app-template-postgres
 version: 0.1.0
 maintainers:
   - name: lkmgr
@@ -10,3 +10,7 @@ dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
     version: 0.1.0
+  - name: postgresql
+    version: 11.6.12
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
