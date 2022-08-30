@@ -1,0 +1,28 @@
+---
+apiVersion: v2
+description: A common powered chart template. Based on common library chart by bjw-s, with Database dependencies
+name: app-template-extra
+version: 0.1.0
+maintainers:
+  - name: lkmgr
+    email: lkmgr@users.noreply.github.com
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    version: 0.1.0
+  - name: postgresql
+    version: 11.6.12
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
+  - name: mariadb
+    version: 11.0.14
+    repository: https://charts.bitnami.com/bitnami
+    condition: mariadb.enabled
+  - name: influxdb
+    version: 5.3.5
+    repository: https://charts.bitnami.com/bitnami
+    condition: influxdb.enabled
+  - name: redis
+    version: 16.13.1
+    repository: https://charts.bitnami.com/bitnami
+    condition: redis.enabled
