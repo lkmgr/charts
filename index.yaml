@@ -17,4 +17,25 @@ entries:
     urls:
     - https://github.com/lkmgr/charts/releases/download/app-template-extra-0.1.0/app-template-extra-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-30T12:40:05.981435688Z"
+  app-template-postgres:
+  - apiVersion: v2
+    created: "2022-08-30T12:43:54.088454433Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.1.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    description: A common powered chart template. This can be useful for small projects
+      that don't have their own chart.
+    digest: d7576902e778980a0b4e176ac281035d4d91e5c9a90fbe21ae551a18e7346f6f
+    maintainers:
+    - email: lkmgr@users.noreply.github.com
+      name: lkmgr
+    name: app-template-postgres
+    urls:
+    - https://github.com/lkmgr/charts/releases/download/app-template-postgres-0.1.0/app-template-postgres-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-08-30T12:43:54.088464033Z"
