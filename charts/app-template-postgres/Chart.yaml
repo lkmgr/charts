@@ -1,6 +1,6 @@
 ---
 apiVersion: v2
-description: A common powered chart template. This can be useful for small projects that don't have their own chart.
+description: A common powered chart template. Based on common library chart by bjw-s, with Bitnami PostgreSQL
 name: app-template-postgres
 version: 0.1.0
 maintainers:
