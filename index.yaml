@@ -1,0 +1,20 @@
+apiVersion: v1
+entries:
+  app-template-extra:
+  - apiVersion: v2
+    created: "2022-08-30T12:40:05.981422988Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.1.0
+    description: A common powered chart template. This can be useful for small projects
+      that don't have their own chart.
+    digest: 917ea6d7dbb614ed60fe1dbb10f3b89e9d910f9aaaed3723d2eb3caaa04b9d1a
+    maintainers:
+    - email: lkmgr@users.noreply.github.com
+      name: lkmgr
+    name: app-template-extra
+    urls:
+    - https://github.com/lkmgr/charts/releases/download/app-template-extra-0.1.0/app-template-extra-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-08-30T12:40:05.981435688Z"
