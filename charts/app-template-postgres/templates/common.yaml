@@ -1,7 +1,7 @@
 ---
 {{- include "common.values.setup" . }}
 
-{{- define "app-template.hardcodedValues" -}}
+{{- define "app-template-postgres.hardcodedValues" -}}
 
 # Set the nameOverride based on the release name if no override has been set
 {{ if not .Values.global.nameOverride }}
@@ -10,6 +10,6 @@ global:
 {{ end }}
 
 {{- end -}}
-{{- $_ := mergeOverwrite .Values (include "app-template.hardcodedValues" . | fromYaml) -}}
+{{- $_ := mergeOverwrite .Values (include "app-template-postgres.hardcodedValues" . | fromYaml) -}}
 
 {{ include "common.all" . }}
