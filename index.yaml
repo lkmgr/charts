@@ -2,6 +2,38 @@ apiVersion: v1
 entries:
   app-template-extra:
   - apiVersion: v2
+    created: "2022-10-18T20:08:43.271152173Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.10
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.3.3
+    - condition: influxdb.enabled
+      name: influxdb
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.4.6
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.13.2
+    description: A common powered chart template. Based on common library chart by
+      bjw-s, with Database dependencies
+    digest: 6767febc3b2efa3c98b742780bedb03cf71f09d1cbd70d0ad189b4dc09f9d97a
+    maintainers:
+    - email: lkmgr@users.noreply.github.com
+      name: lkmgr
+    name: app-template-extra
+    urls:
+    - https://github.com/lkmgr/charts/releases/download/app-template-extra-0.3.1/app-template-extra-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
     created: "2022-09-28T20:27:27.425534135Z"
     dependencies:
     - name: common
@@ -179,6 +211,26 @@ entries:
     version: 0.1.0
   app-template-postgres:
   - apiVersion: v2
+    created: "2022-10-18T20:08:43.480254392Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.10
+    description: A common powered chart template. Based on common library chart by
+      bjw-s, with Bitnami PostgreSQL
+    digest: b0f7fc88806ed21ff4f1a552268f6d8ad325b40afadb44aeb7cfd6b76b7b97f6
+    maintainers:
+    - email: lkmgr@users.noreply.github.com
+      name: lkmgr
+    name: app-template-postgres
+    urls:
+    - https://github.com/lkmgr/charts/releases/download/app-template-postgres-0.3.1/app-template-postgres-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
     created: "2022-09-28T20:27:27.727258993Z"
     dependencies:
     - name: common
@@ -278,4 +330,4 @@ entries:
     urls:
     - https://github.com/lkmgr/charts/releases/download/app-template-postgres-0.1.0/app-template-postgres-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-28T20:27:27.727722901Z"
+generated: "2022-10-18T20:08:43.480399896Z"
