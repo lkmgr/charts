@@ -11,6 +11,6 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 0.2.2
   - name: postgresql
-    version: 11.9.10
+    version: 11.9.13
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
