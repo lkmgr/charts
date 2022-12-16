@@ -19,7 +19,7 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
   - name: influxdb
-    version: 5.4.6
+    version: 5.4.13
     repository: https://charts.bitnami.com/bitnami
     condition: influxdb.enabled
   - name: redis
