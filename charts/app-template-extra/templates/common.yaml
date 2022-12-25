@@ -1,5 +1,5 @@
 ---
-{{- include "common.values.setup" . }}
+{{- include "bjw-s.common.loader.init" . }}
 
 {{- define "app-template-extra.hardcodedValues" -}}
 
@@ -12,4 +12,4 @@ global:
 {{- end -}}
 {{- $_ := mergeOverwrite .Values (include "app-template-extra.hardcodedValues" . | fromYaml) -}}
 
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.generate" . }}
