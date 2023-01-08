@@ -2,7 +2,7 @@
 apiVersion: v2
 description: A common powered chart template. Based on common library chart by bjw-s, with Bitnami PostgreSQL
 name: app-template-postgres
-version: 1.0.1
+version: 2.0.0
 maintainers:
   - name: lkmgr
     email: lkmgr@users.noreply.github.com
